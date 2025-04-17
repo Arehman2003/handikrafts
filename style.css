@@ -1,14 +1,20 @@
-body {
-  margin: 0;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+}
+header{
+  background-color: #ffeddf;
 }
 
 .navbar {
-  background-color: rgb(255, 235, 219);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
+  width: 100%;
 }
 
 .menu-icon {
@@ -36,17 +42,37 @@ body {
 .nav-links.show {
   display: flex;
 }
+/* .left-ima{
+   height: 750px;
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px;
+} */
+.left-img {
+  border: 2px solid #a67146;
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px;
+  margin: 40px auto;
+  padding: 15px;
+  width: 450px;
+  height:700px;
+
+
+}
+.btn {
+  width: 250px;
+  height: 63px;
+  background-color: #a67146;
+  color: aliceblue;
+  border: none;
+  border-radius: 50px;
+}
 .home {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   /* align-items: center; */
   color: rgb(66, 43, 7);
-  background: linear-gradient(
-    to bottom,
-    rgb(255, 242, 232) 0%,
-    rgb(245, 195, 154) 100%
-  );
+  background: linear-gradient(to bottom, #fff2e6 0%, #ffe3d0 100%);
 }
 .home-title {
   display: flex;
@@ -54,13 +80,14 @@ body {
   padding: 2rem;
 }
 .right h1 {
-  margin-top: 100px;
-  font-weight: 800;
+  margin-top: 75px;
+  font-weight: 600;
   font-family: Baskerville Old Face;
-  font-size: xxx-large;
+  font-size: 66px;
 }
 .image {
   display: grid;
+
 }
 @media screen and (max-width: 1024px) {
   .home {
